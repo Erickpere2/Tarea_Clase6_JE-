@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous" />
+   
+   <style>
+        table {
+            width: 100%;
+        }
+    </style>
+    
+    <script src="js/Ejercicio2.js"></script>
+</head>
+
+<body>
+    <div>
+        <form method="GET" ENCTYPE="application/x-www-form-urlencoded" class="pure-form-aligned">
+            <div class="row">
+                <div class="col, alert alert-success">
+                    Deseo ver las tablas del:
+                    <input Id="Numero" type="text" class="form-control" placeholder="Numero " aria-label="Numero"
+                        required>
+                </div>
+            </div>
+            <button onclick="ObtenerDatos()" type="button" class="btn btn-primary">Generar Tablas</button>
+        </form>
+        <br><br>
+    </div>
+    <div id="tablas"></div>
+</body>
+
+</html>
